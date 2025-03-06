@@ -49,3 +49,38 @@ print(list2[2:6])      # both are same
 print(list2[:5])
 print(list2[0:5])      # both are same
 
+# + and * operators with list
+
+list1=[10,20]
+list2=[5,15]
+
+list3=list1+list2
+print(list3)
+
+list4 = [1,2,3,4]
+
+list5 = list4*3
+
+print(list5)          # instead of new list use print(list4*3)
+
+# 'in'& 'not in' operators:
+# these operators help to verify
+# whether certain elements are in the list or not
+
+list6 = [10,20,30,40,50,60,100]
+
+print(40 in list6)
+print(150 in list6)
+
+print(15 not in list6)
+print(100 not in list6)
+
+# Traversing List using for loop:
+# extracting each and every element from the list and
+# printing them in the console output
+
+for i in list6:
+    print(i)
+
+
+
