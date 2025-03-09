@@ -13,3 +13,37 @@ print(list(range(1,10,2)))      #[1, 3, 5, 7, 9]
 print(list(range(0,10,2)))      #[0, 2, 4, 6, 8]
 print(list(range(10,1,-1)))     #[10, 9, 8, 7, 6, 5, 4, 3, 2]
 
+for x in range(10):
+    print(x)
+
+# Range function in list :
+
+list1=[x for x in range(10)]
+print(list1)
+
+# To get 1 to 10 use following expression.
+
+list2 = [x+1 for x in range(10)]
+
+print(list2)
+
+# To get the even number use following expression.
+
+list3 = [x for x in range(10) if x%2 ==0]
+print(list3)
+
+# By changing the location of X % 2,
+# One can return: True or False
+
+list4 = [x % 2 ==0 for x in range(10)]
+print(list4)
+
+# To get Odd number use the following expression.
+
+list5 = [x for x in range(10) if x%2==1]
+print(list5)
+
+# or
+
+list6 = [x for x in range(10) if x%2!=0]
+print(list6)

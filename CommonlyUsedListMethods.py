@@ -28,3 +28,20 @@ print(list1)    # same as print(list1+list2)
 # Extracting a particular element/value at a specific index from the list
 # method name:   index(x:object)
 
+list = [10,20,30,40,50]
+
+print(list[2])      # remember index starts from 0
+
+# append() Vs extend()
+# append will add a new value to the existing list and
+# extend is only to join two list variable together.
+
+
+# Inserting a new element/value x at a given index
+# method: insert(index:int, x:object): returns none
+
+list = [10,20,30,40,50]
+print(list)
+list.insert(3,101)
+print(list)
+
