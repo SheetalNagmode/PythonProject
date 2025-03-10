@@ -39,3 +39,23 @@ for x in friends:
 
 for x in friends:
     print(x, friends[x])
+
+# Finding the length of dictionary
+
+print(len(friends))
+
+# Equality of dictionaries:
+# Verifying if both dictionaries are same or not
+
+d1 = {'mike': 41, "bob": 3}
+d2 = {"bob":3, "mike":41}
+
+print(d1==d2)       # True
+
+d1 = {'mike': 41, "bob": 3}
+d2 = {"bob":3, "mike":42}
+print(d1==d2)       # False
+
+print(d1!=d2)       # True
+
+
