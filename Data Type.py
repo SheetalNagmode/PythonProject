@@ -1,5 +1,5 @@
 x=100           #Number - int
-y=10.5          #Number- float
+y=10.5          #Number-float
 s1="Welcome"    #String/char
 s2="welcome123" #String/char
 

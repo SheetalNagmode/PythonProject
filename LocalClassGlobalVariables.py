@@ -15,3 +15,22 @@ class MyClass:          # Class Variables
 
 cal=MyClass()
 cal.add(100,200)
+
+
+# if all the variable(local, Class & Global) have same name:
+
+a, b= 15,25                     # Global Variables
+
+class MyClass:
+    a,b=10,20                   # Class Variables
+
+    def add(self, a,b):         # Local Variables
+        print(a+b)              #accessing local variable
+        print(self.a+ self.b)   # accessing Class Variables
+        print(globals()['a']+globals()['b'])
+
+# Accessing Global Variable:
+# Use the syntax globals()['']
+
+cal=MyClass()
+cal.add(100,200)

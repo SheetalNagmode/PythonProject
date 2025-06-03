@@ -1,12 +1,12 @@
 #Approach 1st
 
-'''a=10
+""" a=10
 b=10.5
 name="Monica"
 
 print(a)
 print(b)
-print(name)'''
+print(name) """
 
 #Approach 2nd
 
