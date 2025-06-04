@@ -1,4 +1,4 @@
-#Conditional statements: if...else and elif
+#Conditional statements: if,  if...else and elif
 #Syntax :
 #if condition:
 #   statements
@@ -34,5 +34,32 @@ if 0:
 else:
     print('This is a false condition')
 
+# Example 4: Print a person is eligible for vote or not
+# age>=18
 
+age=15
+if age>=18:
+    print("Eligible for vote")
+    # indentation is very impt in python
+else:
+    print("Not eligible for vote")
+    # multiple statements can be added here or above
 
+# Example 5: Find a number is even/odd
+# num%2=0
+
+num=10
+if num%2==0:
+    print("Given number is Even")
+else:
+    print("Given number is Odd")
+
+# Example 6: If else - one statement in single line (ternary operator)
+
+num1=10
+print("Even number") if num1%2==0 else print("Odd number")
+
+# Example 7: if else - Multiple statements in single line
+
+x=20
+{print("hello"), print("python")} if x>=10 else {print("hi"), print("java")}
