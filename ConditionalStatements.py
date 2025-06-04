@@ -63,3 +63,24 @@ print("Even number") if num1%2==0 else print("Odd number")
 
 x=20
 {print("hello"), print("python")} if x>=10 else {print("hi"), print("java")}
+
+# Example 8: Multiple conditions using elif
+
+weekno=5
+
+if weekno==1:
+    print("Sunday")
+elif weekno==2:
+    print("Monday")
+elif weekno==3:
+    print("Tuesday")
+elif weekno==4:
+    print("Wednesday")
+elif weekno==5:
+    print("Thursday")
+elif weekno==6:
+    print("Friday")
+elif weekno==7:
+    print("Saturday")
+else:
+    print("Invalid week number")
