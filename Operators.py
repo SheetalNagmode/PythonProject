@@ -1,5 +1,5 @@
 #  Arithmetic Operators
-from operator import truediv
+#  + - / * // % **
 
 a=5
 b=2
