@@ -29,11 +29,16 @@ print(type(float(z)))       # valid boolean - float
 #print(type(int(y)))         # invalid string to int
 #print(type(float(y)))       # invalid string to float
 
-# max() method
+# max() and min() both functions
+# can be used with numbers (int or float)
+
+# Find the maximum of 3 numbers max()
+# max() method : returns maximum value
 
 print(max(10,50,20))
 
-# min() method
+# Find the minimum number of 3 numbers
+# min() method : returns minimum value
 
 print(min(10,50,20))
 

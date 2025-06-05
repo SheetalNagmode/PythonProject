@@ -27,3 +27,8 @@ print(str[2:7])             # both are same
 print(str[1:-1])
 print(str[1:-2])
 print(str[2:-3])
+
+# ord() and chr()
+
+print(ord('A'))     # returns the ASCII code of the character.
+print(chr(65))      # returns character represented by a ASCII number.

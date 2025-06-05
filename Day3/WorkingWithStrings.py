@@ -31,7 +31,8 @@ str2="Welcome123"
 
 print(id(str1),id(str2))
 
-#Using + and * with string concatenation and repetition can be achieved respectively
+# Using + and * with string
+# concatenation and repetition can be achieved respectively
 # Using + operator with the String Example
 
 str3='Welcome'
@@ -40,5 +41,5 @@ print(str3+ "" + "to Python programming")
 # Using * operator with the String example
 # + and * with numbers give addition and multiplication respectively
 
-print(str3 *3)
+print(str3 * 3)
 
