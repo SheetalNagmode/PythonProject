@@ -13,5 +13,5 @@ print(s.endswith('thon'))
 print(s.startswith("good"))
 print(s.find("come"))
 print(s.find("become"))      # not in the main string so returns minus
-print(s.count("o"))
+print(s.count("t"))
 

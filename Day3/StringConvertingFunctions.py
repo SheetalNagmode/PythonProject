@@ -28,3 +28,18 @@ s6 = s.replace("in","on")
 print(s6)
 
 print(s)
+
+# Reverse a string
+# Method1:
+s="welcome"
+rev_str=""
+for i in s:
+    rev_str=i+rev_str
+print("reversed string is:", rev_str)
+
+# Method 2:
+
+s="welcome"
+rev_str=s[::-1]     # s[0:7:-1]
+print(rev_str)
+

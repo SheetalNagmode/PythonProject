@@ -32,3 +32,30 @@ print(str[2:-3])
 
 print(ord('A'))     # returns the ASCII code of the character.
 print(chr(65))      # returns character represented by a ASCII number.
+
+# max()  min()  len()
+
+print(max("abc"))
+print(min("abc"))
+print(len("welcome"))
+
+# in and not in operators
+s="welcome"
+print("come" in s)
+print("lome" in s)
+
+print("come" not in s)
+print("lome" not in s)
+
+# String Comparison
+
+print("tim" == "tie")
+print("free" != "freedom")
+print("arrow" > "aron")
+print("right" >= "left")
+print("teeth" < "tee")
+print("yellow" <= "fellow")
+print("abc" > "")
+
+# Testing Strings
+
