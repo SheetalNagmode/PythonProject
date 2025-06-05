@@ -3,13 +3,15 @@
 list1 = list()              # Empty list
 list2 = list([10,20,30])    #list contains some values
 list3 = [10,20,30]          # list contains the values
+list4 = ["Apple","Banana", "Orange"]    # strings can be stored in a list too
+list7 = ["Apple", 10, "Banana", 20]     #combination of string and number can be stored in list too.
 
-list4 = ["John","Mary","Scott"]
 
 print(list1)
 print(list2)
 print(list3)
 print(list4)
+print(list7)
 
 # Accessing elements from list
 # There is an index number associated with every element in list
