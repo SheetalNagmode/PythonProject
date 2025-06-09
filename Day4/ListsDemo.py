@@ -129,9 +129,36 @@ mylist1.insert(1, "kiwi")
 print(mylist1)
 
 # remove item from the list
+#pop()   del   clear()
 
+mylist1= ["apple", "banana", "cherry"]
+mylist1.pop(0)
+print(mylist1)
 
+# del : using del keyword
 
+mylist1= ["apple", "banana", "cherry"]
+del mylist1[2]      #here del command removes single item based on the index
+print(mylist1)
+
+# clear()  : removes all the items from the list
+
+mylist1= ["apple", "banana", "cherry"]
+mylist1.clear()
+print(mylist1)
+
+# Copy list:  2 methods
+
+mylist1= ["apple", "banana", "cherry"]
+mylist2=list(mylist1)
+print(mylist1)
+print(mylist2)
+
+# copy() function
+
+mylist1= ["apple", "banana", "cherry"]
+mylist2=mylist1.copy()
+print(mylist2)
 
 
 
