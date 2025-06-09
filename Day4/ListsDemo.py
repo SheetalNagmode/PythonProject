@@ -1,10 +1,11 @@
-# Creating Lists
+# Creating Lists: List can be created using
+# square brackets [] or the list() constructor
 
 list1 = list()              # Empty list
-list2 = list([10,20,30])    #list contains some values
-list3 = [10,20,30]          # list contains the values
-list4 = ["Apple","Banana", "Orange"]    # strings can be stored in a list too
-list7 = ["Apple", 10, "Banana", 20]     #combination of string and number can be stored in list too.
+list2 = list([10,20,30])    #list of integers 1st method
+list3 = [10,20,30]          #list of integers 2nd method
+list4 = ["Apple","Banana", "Orange"]    # List of strings
+list7 = ["Apple", 10, "Banana", 20]     # Mixed Data type
 
 
 print(list1)
@@ -13,13 +14,33 @@ print(list3)
 print(list4)
 print(list7)
 
-# Accessing elements from list
+# Accessing elements/items from list
 # There is an index number associated with every element in list
+# index number starts with 0
+
+mylist=["Apple", "Banana", "Cherry"]
+#           0           1        2    # index starts with zero
+#          -3          -2       -1    # negative index starts with -1 from end
+
+print(mylist[0])
+print(mylist[2])
+print(mylist[-1])
+print(mylist[-2])
+# negative index is also allowed.
+# -1 means it will start the count from the end
+# In this case -1 will be "Cherry"
 
 l= [1,2,3,4,5,6]
 
-print(l[1])      # index number starts with 0
+print(l[1])
 print(l[5])
+
+# Range of indexes
+
+mylist=["Apple","Banana","Cherry","Orange","Kiwi","Melon","Mango"]
+print(mylist[2:5])
+print(mylist[-4:-1])   # will be count from end (-4 = orange) and -1 = mango.
+# but the last will not be displayed. Ans=orange, kiwi, melon
 
 # Common operations in list
 # returns in boolean (true/false)
@@ -83,6 +104,17 @@ print(100 not in list6)
 
 for i in list6:
     print(i)
+
+# Check if the item is exist in the list or not
+# using if..else statemant
+
+mylist=["apple","banana","orange"]
+
+if "apple" in mylist:
+    print("Yes. Apple is present")
+else:
+    print("No. Apple is not present")
+
 
 
 
