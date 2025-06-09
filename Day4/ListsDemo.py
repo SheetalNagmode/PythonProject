@@ -105,8 +105,8 @@ print(100 not in list6)
 for i in list6:
     print(i)
 
-# Check if the item is exist in the list or not
-# using if..else statemant
+# Check if the item exist in the list or not
+# using if..else statement
 
 mylist=["apple","banana","orange"]
 
@@ -114,6 +114,26 @@ if "apple" in mylist:
     print("Yes. Apple is present")
 else:
     print("No. Apple is not present")
+
+# Add items:  append()  insert()
+#when you use append() the item is always added at the end of the list
+
+mylist1= ["apple", "banana", "cherry"]
+mylist1.append("orange")
+print(mylist1)
+
+# to insert an item in the middle of the list use insert() function
+# mention the index where the new item will be added and the item name
+
+mylist1.insert(1, "kiwi")
+print(mylist1)
+
+# remove item from the list
+
+
+
+
+
 
 
 
