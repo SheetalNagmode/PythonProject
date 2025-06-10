@@ -160,7 +160,25 @@ mylist1= ["apple", "banana", "cherry"]
 mylist2=mylist1.copy()
 print(mylist2)
 
+# Combine/ join lists
+# using + operator
+list1=["a","b","c"]
+list2=[1,2,3]
+list3=list1+list2
+print(list3)
 
+# using for loop
+
+for i in list2:
+    list1.append(i)
+print(list1)
+
+# Using extend() function
+
+list1=["a","b","c"]
+list2=[1,2,3]
+list1.extend(list2)
+print(list1)
 
 
 
