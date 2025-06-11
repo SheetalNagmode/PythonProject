@@ -72,5 +72,20 @@ mytuple1=("apple","banana","cherry")
 # mytuple.remove("apple")   # invalid / it is not possible
 
 del mytuple
-print(mytuple)      #NameError: name "mytuple" is not defined
+# print(mytuple)      #NameError: name "mytuple" is not defined
 
+# Example 11: Join/ Combine tuple
+tuple1=(10,20,30)
+tuple2=("a","b","c")
+
+tuple3=tuple1+tuple2
+print(tuple3)
+
+# Example 12: Compare two tuple
+tuple1=(10,20,30)
+tuple2=("a","b","c")
+
+if tuple1==tuple2:
+    print("tuples are equal")
+else:
+    print("tuples are not equal")
