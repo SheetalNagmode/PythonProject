@@ -1,3 +1,22 @@
+# empty Tuple:
+# Example: creating Tuple
+
+mytuple=("apple","banana","cherry")
+print(mytuple)
+
+# Example 2: Access tuple items:
+# index starts with zero
+
+mytuple=("apple","banana","cherry")
+print(mytuple[1])
+print(mytuple[-1])
+
+# Example3: Range of indexes:
+
+mytuple=("apple","banana","cherry", "orange","kiwi","melon","mango")
+mytuple[2:5]
+mytuple[-4:-1]
+
 # Tuple Functions:
 # Functions like max, min, len, sum are also used with tuples
 
@@ -14,3 +33,14 @@ print(len(t1))
 for i in t1:
     print(i)
 
+# Example 4: Changing tuple items:
+# by default tuple does not allow you change values because it is immutable
+# but there is work around
+# tuple--> list(modify)--> tuple
+
+mytuple=("apple","banana","cherry")
+mylist=list(mytuple)
+mylist[0]="orange"
+
+mytuple=tuple(mylist)
+print(mytuple)
