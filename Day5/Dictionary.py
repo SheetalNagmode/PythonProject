@@ -11,8 +11,21 @@ print(friends)
 mydic={101:'x', 102:'y',103:'z'}
 print(mydic)
 
+# Example 2: Accessing items frm dictionary
 
+mydic={
+    "brand": "Hyundai",
+    "model": "i10",
+    "year": 2021
+}
 
+print(mydic["brand"])
+print(mydic["model"])
+
+# using get()  function:
+
+x=mydic.get("brand")     # or
+print(mydic.get("brand"))
 
 # Retrieving, modifying and adding elements in the dictionary
 # Retrieving specific value:
@@ -23,18 +36,41 @@ print(friends['jerry'])
 friends['bob']='888-999-222'
 print(friends)
 
-# Modify existing value of tom
+# Example 3; Change/ Modify existing values in dictionary
 
 friends['tom']='999-888-777'
 print(friends)
+
+mydic={"brand": "Hyundai",
+    "model": "i10",
+    "year": 2021}
+mydic["year"]=2022
+print(mydic)
 
 # Always put the key in [] and values in ''
 # while operating on the data (modifying & adding)
 # In the definition key and values should in {}
 
+# Example 4: reading items from dictionary using loop
 # Looping items in dictionary
 # To extract only the values of the keys:
 
+mydic={
+    "brand": "Hyundai",
+    "model": "i10",
+    "year": 2021
+}
+
+for i in mydic:
+    print(i)     # prints only keys from dictionary
+
+for i in mydic:
+    print(mydic[i])   # print only values form dictionary
+
+for x,y in mydic.items():
+    print(x,y)       # print keys along with values
+
+#2nd:
 friends = {'a':'100',
            'b':'200',
            'c':'300',
@@ -43,7 +79,7 @@ friends = {'a':'100',
 for x in friends:
     print(friends[x])
 
-# to print key plus value of it use the follwing expression:
+# to print key plus value of it use the following expression:
 
 for x in friends:
     print(x, friends[x])
