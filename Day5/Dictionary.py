@@ -1,10 +1,18 @@
-# Creating Dictionary:
+#Example 1:  Creating Dictionary:
 # Always use {} to pass the value
+# always in key with values
+# keys stay unique values can be same
 
 friends = {'tom':'111-222-333',
            'Kim': '333-444-555',
            'jerry': '666-33-111'}
 print(friends)
+
+mydic={101:'x', 102:'y',103:'z'}
+print(mydic)
+
+
+
 
 # Retrieving, modifying and adding elements in the dictionary
 # Retrieving specific value:
