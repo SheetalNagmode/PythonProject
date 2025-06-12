@@ -1,4 +1,6 @@
 # Dictionary Methods:
+# Example 1: remove item from dictionary
+
 
 friends = {'tom':'111-222-333',
            'bob': '333-444-555',

@@ -65,7 +65,7 @@ for i in mydic:
     print(i)     # prints only keys from dictionary
 
 for i in mydic:
-    print(mydic[i])   # print only values form dictionary
+    print(mydic[i])   # print only values from dictionary
 
 for x,y in mydic.items():
     print(x,y)       # print keys along with values
@@ -84,9 +84,39 @@ for x in friends:
 for x in friends:
     print(x, friends[x])
 
-# Finding the length of dictionary
+# Example: 5: Check key exist in dictionary or not
+
+mydic={
+    "brand": "Hyundai",
+    "model": "i10",
+    "year": 2021
+}
+if "model" in mydic:
+    print("exist")
+else:
+    print("not exist")
+
+# Another way to find the item present in the dictionary in one line
+
+print("model" in mydic)
+
+
+# Example 6: Finding the length of dictionary
+# Find the number of items in dictionary
+
+print(len(mydic))
 
 print(len(friends))
+
+# Example 7: Adding items to dictionary
+
+mydic={
+    "brand": "Hyundai",
+    "model": "i10",
+    "year": 2021
+}
+mydic["color"]="red"
+print(mydic)
 
 # Equality of dictionaries:
 # Verifying if both dictionaries are same or not
