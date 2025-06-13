@@ -4,8 +4,31 @@
 def myfunc():
    pass
 
+def myfun():
+    print("hello")
 
-# Function takes arguments/parameters and do something
+# this will not print anything.
+# Becoz this is only creating a function.
+# To call a function it needs to be mentioned:
+
+myfun()    # Calling the function
+
+# Example 2: Function takes arguments/parameters and do something
+
+def myfun(name):
+    print("Hello",name)
+myfun("Smith")
+
+
+# Example3:
+
+def cal(a,b):
+    return(a+b)
+
+sum= cal(100,200)
+print(sum)
+#  or
+print(cal(100,200))
 
 def sum1(start, end):
     result = 0
