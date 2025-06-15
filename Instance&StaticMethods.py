@@ -1,6 +1,5 @@
 # Instance Method: We can access these methods only through object
 # Static Method: We can access these methods directly using class
-from OOPSConcepts import MyClass
 
 
 class MyClass:
