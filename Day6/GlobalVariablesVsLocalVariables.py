@@ -35,6 +35,7 @@ print(xy)
 
 
 # Changing Global variable to local variable:
+# Using Global variable in Local variable and update value
 # in this case the global variable changed within the function
 # will also reflect outside the function
 
@@ -44,7 +45,7 @@ t=1
 def increment():
     #global t=100 # invalid
     global t
-    t=100
+    t=400
     print(t)
 
 increment()
