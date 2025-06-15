@@ -1,10 +1,20 @@
-# Passing Arguments:
+# Types of Arguments:
+# Positional and Keyword arguments:
 # Argument with default values (positional)
 # if there are two parameters and only one value is provided,
 # by adding j=0, it will print zero as default value for j
 # if only one value is mentioned it will go to the first variable
 # and not to the 2nd one
 
+#Example 1:
+
+def func(i,j):
+    print(i,j)
+
+func(10,20)       # Positional arguments
+func(j=20, i=10)       # Keyword arguments
+
+#Example2: Default values assigned to Positional arguments
 
 def func(i=0,j=0):      # Default values assigned
     print(i,j)
@@ -12,7 +22,7 @@ def func(i=0,j=0):      # Default values assigned
 func(10)            # 20,0 # 0 is the default value of j
 func(10,20)
 
-# Keyword Argument (Named Argument):
+#Example 3:  Keyword Argument (Named Argument):
 
 def named_args(name, greeting):
     print(greeting+ " " + name)

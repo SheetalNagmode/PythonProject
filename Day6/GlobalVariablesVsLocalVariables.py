@@ -40,7 +40,7 @@ print(xy)
 # will also reflect outside the function
 
 
-t=1
+t=100
 
 def increment():
     #global t=100 # invalid
@@ -54,7 +54,7 @@ print(t)
 
 
 # There is no need to declare global variable outside the function
-# you can declare them global inside the function
+# you can declare global inside the function
 
 def foo():
     global x
