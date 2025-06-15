@@ -56,4 +56,5 @@ my_func(10,b=20,c=30)
 my_func(10,c=30,b=20)
 
 # my_func(b=20,c=30,10)   # this is invalid.
+# Positional argument must appear before any keyword argument
 
