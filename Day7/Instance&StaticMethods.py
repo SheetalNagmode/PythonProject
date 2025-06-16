@@ -1,5 +1,10 @@
+# Two types of methods we can define within a class:
 # Instance Method: We can access these methods only through object
-# Static Method: We can access these methods directly using class
+# Static Method: We can access these methods directly using class name
+# annotation @staticmethod: This helps in making a static method
+# which will be a common method for all the objects in a class
+# when a static method is created 'self' is considered as a parameter
+# but when an instance is created the 'self' is not considered as a parameter
 
 
 class MyClass:
