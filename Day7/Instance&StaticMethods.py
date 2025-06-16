@@ -52,4 +52,14 @@ mc=MyClass()
 mc.add()
 mc.mul()
 
+# Example4:
+i,j= 15,25   # global variables
+class MyClass:
+    a,b=10,20  # Class variables
+    def add(self,x,y):
+        print(x+y)  #
+        print(self.a+self.b)   # a, b are class variables
+        print(i + j)      # i, j are global variables
 
+mc=MyClass()
+mc.add(100,200)
