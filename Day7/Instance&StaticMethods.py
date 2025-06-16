@@ -57,9 +57,24 @@ i,j= 15,25   # global variables
 class MyClass:
     a,b=10,20  # Class variables
     def add(self,x,y):
-        print(x+y)  #
+        print(x+y)  #    local variable
         print(self.a+self.b)   # a, b are class variables
         print(i + j)      # i, j are global variables
+
+mc=MyClass()
+mc.add(100,200)
+
+
+# Example 5:  when the global, class and local variables are the same,
+# we need to use globals()[] to access the global variables
+
+a,b= 15,25   # global variables
+class MyClass:
+    a,b=10,20  # Class variables
+    def add(self,a,b):
+        print(a+b)  #   local variables
+        print(self.a+self.b)   # a, b are class variables
+        print(globals()['a'] + globals()['b'])      # a, b are global variables
 
 mc=MyClass()
 mc.add(100,200)
