@@ -56,7 +56,9 @@ class Emp:
         self.ename = ename
         self.sal = sal
     def __str__(self):      # returns only a string
-        return (self.ename)
+        return (self.ename) # invalid becoz __str__() return only string data
 
 e1=Emp(101, "John", 120000)
 print(e1)
+
+# this constructor can be used if all the values is in string
