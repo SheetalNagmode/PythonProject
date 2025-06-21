@@ -66,8 +66,39 @@ class B(A):
     def m2(self):
         print(self.a-self.b)
 
-class C(B):
+class C(A):
     i, j= 5,2
     def m3(self):
         print(self.i * self.j)
 
+bobj=B()
+bobj.m1()
+bobj.m2()
+
+cobj=C()
+cobj.m1()
+cobj.m3()
+
+# Example 5: Multiple inheritance.
+# In this two parent classes are needed for a child class
+
+class A:
+    x,y=10,20
+    def m1(self):
+        print(self.x+self.y)
+
+class B:
+    a, b= 200, 100
+    def m2(self):
+        print(self.a-self.b)
+
+class C(A,B):  # number of classes can be pacified
+               # in the bracket separated by comma
+    i, j= 5,2
+    def m3(self):
+        print(self.i * self.j)
+
+cobj=C()
+cobj.m1()
+cobj.m2()
+cobj.m3()
