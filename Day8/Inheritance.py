@@ -7,6 +7,8 @@ class A:
 class B(A):
     def m2(self):
         print("This is m2 method from class B")
+# When A is put in brackets after B.
+# B becomes the child class of A class.
 
 bobj=B()
 bobj.m1()
