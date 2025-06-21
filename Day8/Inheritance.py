@@ -29,3 +29,45 @@ class B(A):
 bobj=B()
 bobj.m1()
 bobj.m2()
+
+# Example 3: Multi Level Inheritance
+# It's a combination of multiple single inheritances.
+
+class A:
+    x,y=10,20
+    def m1(self):
+        print(self.x+self.y)
+
+class B(A):
+    a, b= 200, 100
+    def m2(self):
+        print(self.a-self.b)
+
+class C(B):
+    i, j= 5,2
+    def m3(self):
+        print(self.i * self.j)
+
+cobj=C()
+cobj.m1()
+cobj.m2()
+cobj.m3()
+
+# Example 4: Hierarchy Inheritance.
+# Only one parent class can have multiple child classes
+
+class A:
+    x,y=10,20
+    def m1(self):
+        print(self.x+self.y)
+
+class B(A):
+    a, b= 200, 100
+    def m2(self):
+        print(self.a-self.b)
+
+class C(B):
+    i, j= 5,2
+    def m3(self):
+        print(self.i * self.j)
+
