@@ -1,3 +1,4 @@
+# Types of inheritance in python
 # Example 1: Single inheritance
 
 class A:
@@ -102,3 +103,9 @@ cobj=C()
 cobj.m1()
 cobj.m2()
 cobj.m3()
+
+
+# Example 6: Over riding concept
+
+
+
