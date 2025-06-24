@@ -107,5 +107,34 @@ cobj.m3()
 
 # Example 6: Over riding concept
 
+class A:
+    def m1(self):
+        print("this is m1 method from class A")
+class B(A):
+    def m1(self):
+        print("this is m1 method from class B")
+        super().m1()
+        # this will invoke the parent class method through the child class
+
+bobj=B()
+bobj.m1()   # Method created in parent class,
+            # if same method is created in the child class,
+            # is called the overriding concept
+            # by default the method will be invoked from child class
+
+# Example 7:
+
+class A:
+   a, b = 10, 20
+
+class B(A):
+    i, j=100, 200
+    def m(self, x, y):
+        print(x+y)  # local variables
+        print(self.i+self.j)  # class variables
+        print(self.a+self.b)  # class variables
+
+bobj= B()
+bobj.m(1000, 2000)
 
 
