@@ -137,4 +137,24 @@ class B(A):
 bobj= B()
 bobj.m(1000, 2000)
 
+# Example 8: overriding variables
+
+class Parent:
+    name= "Scott"
+
+class Child(Parent):
+    name ="John"
+    def test(self):
+        print(super().name) # to access the parent class variable
+                            # method is needed to be created
+
+cobj = Child()
+print(cobj.name)
+cobj.test()
+
+
+# Example 9: Overriding methods
+
+
+
 
