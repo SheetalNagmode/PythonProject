@@ -155,6 +155,24 @@ cobj.test()
 
 # Example 9: Overriding methods
 
+class Bank:
+    def rateofInterest(self):
+        return 0
+
+class XBank:
+    def rateofInterest(self):
+        return 10
+
+class YBank:
+    def rateofInterest(self):
+        return 12
+
+objx=XBank()
+print(objx.rateofInterest())
+
+objy=YBank()
+print(objy.rateofInterest())
+
 
 
 
