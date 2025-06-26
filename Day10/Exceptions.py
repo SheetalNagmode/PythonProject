@@ -51,7 +51,7 @@ def enterage(num):
     else:
         print("Odd")
 
-print("Checking number is even or odd by callng function..")
+print("Checking number is even or odd by calling function..")
 num=-1
 try:
     enterage(num)
