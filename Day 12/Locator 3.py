@@ -9,8 +9,6 @@ driver=webdriver.Chrome(service= serv_obj)
 driver.get("https://www.facebook.com/")
 driver.maximize_window()
 
-# time.sleep(2)
-
 # Tag & Id
 # tagname#valueofID
 
@@ -26,9 +24,9 @@ driver.maximize_window()
 # tag and attribute
 # tagname[attribute=value]     input[data-testid=royal-email]
 
-# driver.find_element(By.CSS_SELECTOR, "input[data-testid=royal-email]").send_keys("abc@gmail.com")
+driver.find_element(By.CSS_SELECTOR, "input[data-testid=royal-email]").send_keys("abc@gmail.com")
 
-time.sleep(2)
+# time.sleep(2)
 
 # tag, class & attribute
 # tagname.valueofClass[attribute=value]     input.inputtext[data-testid=royal_pass]
