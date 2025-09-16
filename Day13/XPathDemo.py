@@ -25,7 +25,14 @@ driver.maximize_window()
 
 # or / and
 
-driver.find_element(By.XPATH,"//input[@id='small_searchterms'or @name='q']").send_keys("Apple MacBook Pro")
-driver.find_element(By.XPATH,"//input[@class='search-box-text ui-autocomplete-input'and @name='q']").click()
+#driver.find_element(By.XPATH,"//input[@id='small_searchterms'or @name='q']").send_keys("Apple MacBook Pro")
+#driver.find_element(By.XPATH,"//input[@class='search-box-text ui-autocomplete-input'and @name='q']").click()
 
-time.sleep(4)
+#time.sleep(4)
+
+# contains()  & start-with()
+
+driver.find_element(By.XPATH,"//input[contains(@id,'small')]").send_keys("Apple MacBook Pro")
+driver.find_element(By.XPATH,"//button[starts-with(@type,'sub')]").click()
+
+time.sleep(2)
