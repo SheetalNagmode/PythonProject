@@ -32,7 +32,12 @@ driver.maximize_window()
 
 # contains()  & start-with()
 
-driver.find_element(By.XPATH,"//input[contains(@id,'small')]").send_keys("Apple MacBook Pro")
-driver.find_element(By.XPATH,"//button[starts-with(@type,'sub')]").click()
+#driver.find_element(By.XPATH,"//input[contains(@id,'small')]").send_keys("Apple MacBook Pro")
+#driver.find_element(By.XPATH,"//button[starts-with(@type,'sub')]").click()
+
+#time.sleep(2)
+
+# text()
+driver.find_element(By.XPATH, "//a[text()='Register']").click()
 
 time.sleep(2)
